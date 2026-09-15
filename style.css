@@ -95,6 +95,25 @@ body {
   border-color: var(--accent);
 }
 
+#skin-select {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  height: 34px;
+  padding: 0 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#skin-select:hover {
+  border-color: var(--accent);
+}
+
+html[data-skin="neon"] #board {
+  background: #000;
+}
+
 .game-container {
   display: flex;
   gap: 20px;
