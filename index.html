@@ -56,6 +56,16 @@
             <li><kbd>P</kbd> / <kbd>Esc</kbd> pausa</li>
           </ul>
         </div>
+
+        <div class="panel-section" id="highscore-panel">
+          <span class="label">TOP 5</span>
+          <ol class="highscore-list" id="highscore-list-panel"></ol>
+          <div class="alltime-stats">
+            <span>Mejor combo: <strong id="best-combo-panel">0</strong></span>
+            <span>Máx. líneas: <strong id="max-lines-panel">0</strong></span>
+          </div>
+          <button id="reset-scores-btn" class="reset-scores-btn">Reiniciar puntuaciones</button>
+        </div>
       </aside>
     </div>
 
@@ -63,6 +73,16 @@
       <div class="overlay-box">
         <p id="overlay-title">GAME OVER</p>
         <p id="overlay-score"></p>
+        <div id="name-entry-box" class="hidden">
+          <p>¡Nueva puntuación alta!</p>
+          <input id="name-input" type="text" maxlength="12" placeholder="Tu nombre" />
+          <button id="submit-name-btn" class="submit-name-btn">Guardar</button>
+        </div>
+        <ol class="highscore-list" id="highscore-list-gameover"></ol>
+        <div class="alltime-stats">
+          <span>Mejor combo: <strong id="best-combo-gameover">0</strong></span>
+          <span>Máx. líneas: <strong id="max-lines-gameover">0</strong></span>
+        </div>
         <button id="restart-btn" class="menu-btn">Reiniciar</button>
       </div>
     </div>
