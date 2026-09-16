@@ -19,9 +19,33 @@
       <button id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">🌙</button>
     </div>
     <div class="game-container">
+      <aside class="panel panel-left">
+        <div class="panel-section controls">
+          <span class="label">CONTROLS</span>
+          <ul>
+            <li><kbd>←</kbd><kbd>→</kbd> mover</li>
+            <li><kbd>↑</kbd> rotar</li>
+            <li><kbd>↓</kbd> bajar</li>
+            <li><kbd>Space</kbd> caída</li>
+            <li><kbd>C</kbd> hold</li>
+            <li><kbd>P</kbd> / <kbd>Esc</kbd> pausa</li>
+          </ul>
+        </div>
+
+        <div class="panel-section" id="highscore-panel">
+          <span class="label">TOP 5</span>
+          <ol class="highscore-list" id="highscore-list-panel"></ol>
+          <div class="alltime-stats">
+            <span>Mejor combo: <strong id="best-combo-panel">0</strong></span>
+            <span>Máx. líneas: <strong id="max-lines-panel">0</strong></span>
+          </div>
+          <button id="reset-scores-btn" class="reset-scores-btn">Reiniciar puntuaciones</button>
+        </div>
+      </aside>
+
       <canvas id="board" width="300" height="600"></canvas>
 
-      <aside class="panel">
+      <aside class="panel panel-right">
         <div class="panel-section">
           <span class="label">SCORE</span>
           <span class="value" id="score">0</span>
@@ -43,28 +67,6 @@
         <div class="panel-section">
           <span class="label">NEXT</span>
           <canvas id="next-canvas" width="120" height="120"></canvas>
-        </div>
-
-        <div class="panel-section controls">
-          <span class="label">CONTROLS</span>
-          <ul>
-            <li><kbd>←</kbd><kbd>→</kbd> mover</li>
-            <li><kbd>↑</kbd> rotar</li>
-            <li><kbd>↓</kbd> bajar</li>
-            <li><kbd>Space</kbd> caída</li>
-            <li><kbd>C</kbd> hold</li>
-            <li><kbd>P</kbd> / <kbd>Esc</kbd> pausa</li>
-          </ul>
-        </div>
-
-        <div class="panel-section" id="highscore-panel">
-          <span class="label">TOP 5</span>
-          <ol class="highscore-list" id="highscore-list-panel"></ol>
-          <div class="alltime-stats">
-            <span>Mejor combo: <strong id="best-combo-panel">0</strong></span>
-            <span>Máx. líneas: <strong id="max-lines-panel">0</strong></span>
-          </div>
-          <button id="reset-scores-btn" class="reset-scores-btn">Reiniciar puntuaciones</button>
         </div>
       </aside>
     </div>
